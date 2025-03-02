@@ -130,6 +130,10 @@ function run(){
   let password = s + " to " + s1
   console.log(password)
   document.getElementById("output").innerHTML=password
+  let go = document.getElementById("go")
+  go.innerHTML= "Get Directions Here"
+  let golink = "https://www.google.com/maps/search/?q="+password+"+station"
+  go.href = golink
 }
 function run2() {
   let sn = Math.floor(Math.random() * stations.length)
